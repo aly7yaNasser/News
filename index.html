@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today News</title>
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="node_modules/semantic-ui/dist/semantic.min.js"></script>
+<link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.css">
+<link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/a55ca2877b.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body class="" style="background-image: url(../today-project-main/img/general-1-1.jpg);" >
+  <nav>
+    <div  class="ui tabular inverted menu six item container  ">
+      
+      <a id="general" class=" center blue active  item txt-blue border-blue font-white far fa-newspaper  " > <i class="far fa-newspaper  padding-r">  </i>  General</a>
+      <a id="economy" class=" red item txt-red border-red"> <i class="fas fa-dollar-sign padding-r"></i>Economy</a>
+      <a id="sport" class=" green item txt-green border-green "><i class="fas fa-futbol padding-r"></i>Sport</a>
+      <a id="random" class=" yellow item txt-yallow border-yallow"><i class="fas fa-random padding-r"></i>random</a>
+      
+    </div>
+   
+  
+  </nav>
+
+ 
+  <div class="top padding">           </div>
+
+
+  <div class="ui grid "> 
+    
+
+  <div class="two wide column news-bg " id="corona" > 
+    
+    <div class="ui  column grid">
+    <div class="column">
+      <h1 class="txt-center">      <i class="fas fa-viruses font-white  "></i>
+      </h1>
+  
+    <h2 class="font-white txt-center  ">Daily </h2>
+
+      <h5 class="font-white txt-center txt-yallow">Cases</h5> 
+      <h5 class=" font-white txt-center txt-yallow" id="cases"></h5>
+
+   
+
+    <h5 class="font-white  txt-green txt-center ">Recovereds</h5>
+    <h5 class="font-white  txt-center txt-green" id="recovored" ></h5>
+   
+
+    <h5 class="font-white  txt-center txt-red">Deaths</h5>
+    <h5 class="font-white  txt-center txt-red" id="deaths"></h5>
+    </div>
+  </div>
+  <h2 class="font-white txt-center ">Total </h2>
+
+  <div class="ui  column grid">
+    <div class="column">
+      <h5 class="font-white txt-center txt-yallow">Cases</h5>
+      <h5 class=" font-white txt-center txt-yallow" id="tCases"></h5>
+
+   
+
+    <h5 class="font-white  txt-center txt-green ">Recoverd</h5>
+    <h5 class="font-white  txt-center txt-green" id="tRecovoreds"></h5>
+   
+
+    <h5 class="font-white  txt-center txt-red">Deaths</h5>
+    <h5 class="font-white  txt-center txt-red" id="tDeaths"></h5>
+    </div>
+  </div>
+
+  
+</div>
+
+
+<div class="one wide column " ></div> 
+
+
+  <div class="ten wide column top">
+    <div class="ui tabular menu inverted  ">
+      <a class=" blue item ngItem txt-blue " id="local">
+        <i class="fas fa-map-marker-alt padding-r"></i>
+        Local 
+      </a>
+      <a class="item ngItem red txt-red " id="global">
+        <i class="fas fa-globe-africa padding-r"></i>
+        Global
+      </a>  
+      <div class="ui search item right">
+
+        <div class="ui icon input">
+          <input class="search-txt" type="text" placeholder="Search for...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+        
+        
+
+    
+    <div class="ui bottom attached  select-bg " style="background: transparent !important;">
+      <div class="ui items" id="newsContainer">
+      
+
+        
+        </div>
+    </div>
+  </div>
+
+  <div class="one column"></div>
+
+  <div class="two wide column right news-bg" id="weather" >
+    <h1 class="font-white  txt-center"> <i class="fas fa-cloud-moon-rain "></i></h1>
+    <h3 class="font-white txt-center "> Weather</h3>
+    <h3 class="font-white txt-center " id="wState"> </h3>
+
+    <h3 class="font-white txt-center" id="wIcon">  </i></h3>
+    
+    
+    <h3 class="font-white  txt-center "></i>Temp </h3>
+    <h3 class="font-white  txt-center  " id="wHigh"><i class="fas fa-thermometer-three-quarters padding-r"></i></h3>
+    
+    
+    <!-- <h3 class="font-white  txt-center "><i class="fas fa-thermometer-quarter padding-r"></i>Low </h3>
+    <h3 class="font-white  txt-center" id="wLow"></h3> -->
+    
+  </div>
+  </div>
+
+</body>
+</html>
